@@ -1,0 +1,115 @@
+<svg class="w-full h-full" width="812" height="1137" viewBox="0 0 812 1137" fill="none" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <rect width="812" height="1137" rx="10" fill="{color}" fill-opacity="0.96" />
+    <g style="mix-blend-mode:screen" opacity="0.4">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M46.9414 40.9412C43.6277 40.9412 40.9414 43.6275 40.9414 46.9412V1089.18C40.9414 1092.49 43.6277 1095.18 46.9414 1095.18H765.059C768.373 1095.18 771.059 1092.49 771.059 1089.18V46.9412C771.059 43.6275 768.373 40.9412 765.059 40.9412H46.9414ZM96 113C91.5817 113 88 116.582 88 121V626C88 630.418 91.5817 634 96 634H719C723.418 634 727 630.418 727 626V121C727 116.582 723.418 113 719 113H96ZM88 792H726V795H88V792ZM726 915H88V918H726V915Z"
+            fill="white" />
+    </g>
+    <rect x="102.353" y="128" width="610.706" height="492" rx="4" fill="url(#pattern0_894_497)" />
+    <g>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="32"
+            font-weight="bold" stroke="black">
+            <tspan x="88" y="96.7935">{title}</tspan>
+        </text>
+        <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="30"
+            font-weight="bold" stroke="black" text-anchor="end">
+            <tspan x="802.5" y="96.1899">{hp} HP</tspan>
+        </text>
+    </g>
+    <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="26"
+        font-weight="bold">
+        <tspan x="88" y="715.586">{move1_name}</tspan>
+    </text>
+    <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="26"
+        font-weight="bold">
+        <tspan x="88" y="835.811">{move2_name} </tspan>
+    </text>
+    <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" text-anchor="end"
+        font-size="54.5882">
+        <tspan x="802.5" y="758.177">{move1_power}</tspan>
+    </text>
+    <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" text-anchor="end"
+        font-size="54.5882">
+        <tspan x="802.5" y="881.177">{move2_power}</tspan>
+    </text>
+    <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="20"
+        font-weight="bold">
+        <tspan x="88" y="947.441">Weakness</tspan>
+    </text>
+    <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="20"
+    >
+        <tspan x="88" y="1032.44">{footer_1}&#10;</tspan>
+        <tspan x="88" y="1055.44">{footer_2}</tspan>
+    </text>
+    <text fill="black" fill-opacity="0.5" xml:space="preserve" style="white-space: pre" font-family="Arial"
+        font-size="12">
+        <tspan x="285" y="1086.66">www.mannys.game &#x2022; 2024 &#x2022; no rights reserved</tspan>
+    </text>
+    <text fill="black" fill-opacity="0.5" xml:space="preserve" style="white-space: pre" font-family="Arial"
+        font-size="12">
+        <tspan x="50" y="1086.66">mannygen powered by Glif</tspan>
+    </text>
+    <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="20"
+        font-weight="bold">
+        <tspan x="353.234" y="947.441">Resistance</tspan>
+    </text>
+    <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="20"
+        font-weight="bold" text-anchor="end">
+        <tspan x="754" y="946.597">Mood</tspan>
+    </text>
+    <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="16"
+        text-anchor="end">
+        <tspan x="748" y="972.931">{mood}</tspan>
+    </text>
+    <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="22"
+    >
+        <tspan x="88" y="865.035">{move2_info_1}&#10;</tspan>
+        <tspan x="88" y="890.035">{move2_info_2}</tspan>
+    </text>
+    <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="22"
+    >
+        <tspan x="88" y="748.035">{move1_info_1}&#10;</tspan>
+        <tspan x="88" y="773.035">{move1_info_2}</tspan>
+    </text>
+    <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="20"
+        text-anchor="middle">
+        <tspan x="406" y="667">
+            <tspan font-weight="bold">{type} manny</tspan> &#x2022; Height: {height} ft &#x2022; Weight: {weight} lbs
+        </tspan>
+    </text>
+
+    <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="16"
+    >
+        <tspan x="88" y="972.931">{weakness}</tspan>
+    </text>
+    <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="16"
+        text-anchor="middle">
+        <tspan x="415" y="972.931">{resistance}</tspan>
+    </text>
+    <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="17.0588"
+        text-anchor="end" font-weight="bold">
+        <tspan x="766" y="1087">{nth}</tspan>
+    </text>
+    <circle cx="757.471" cy="1081.53" r="6.82353" fill="black" />
+    <g style="mix-blend-mode:overlay">
+        <rect x="2.5" y="2.5" width="807" height="1132" rx="7.5" fill="url(#paint0_radial_894_497)" />
+        <rect x="2.5" y="2.5" width="807" height="1132" rx="7.5" stroke="url(#paint1_linear_894_497)" stroke-width="5"
+            stroke-linejoin="round" />
+    </g>
+    <defs>
+        <pattern id="pattern0_894_497" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_894_497" transform="matrix(0.000976562 0 0 0.00121218 0 -0.120636)" />
+        </pattern>
+        <radialGradient id="paint0_radial_894_497" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(556.5 305.5) rotate(121.151) scale(970.43 693.652)">
+            <stop stop-color="white" stop-opacity="0.5" />
+            <stop offset="1" stop-color="#0E0C0C" stop-opacity="0.4" />
+        </radialGradient>
+        <linearGradient id="paint1_linear_894_497" x1="116" y1="1137" x2="748.5" y2="29" gradientUnits="userSpaceOnUse">
+            <stop />
+            <stop offset="1" stop-color="white" />
+        </linearGradient>
+        <image id="image0_894_497" width="1024" height="1024" xlink:href="{image_url}" />
+    </defs>
+</svg>

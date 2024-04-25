@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Display</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const card = document.getElementById('tilt-card');
+
+    card.addEventListener('mousemove', function(e) {
+        const { offsetX, offsetY, offsetWidth, offsetHeight } = e.target;
+        const x = (offsetX / offsetWidth) - 0.5;
+        const y = (offsetY / offsetHeight) - 0.5;
+        
+        const rotateDegree = 20; // Degree of rotation, adjust as needed
+        const tiltEffect = `rotateX(${y * rotateDegree}deg) rotateY(${x * rotateDegree * -1}deg) scale(1.05)`;
+        
+        e.target.style.transform = tiltEffect;
+    });
+
+    card.addEventListener('mouseleave', function(e) {
+        e.target.style.transform = 'rotateX(0) rotateY(0) scale(1)';
+    });
+});
+</script>
+
+<body class="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 p-4 bg-black">
+    {svgs}
+</body>
+
+</html>

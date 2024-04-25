@@ -1,0 +1,158 @@
+<svg width="573" height="855" viewBox="0 0 573 855" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="card_outer">
+<rect width="573" height="855" rx="30" fill="#74CB48"/>
+<g id="card_inner">
+<rect x="20" y="20" width="533" height="815" rx="10" fill="#A2E065"/>
+<g id="Vector 1" filter="url(#filter0_d_841_40)">
+<path d="M514 59V93H442.31C441.441 93 440.574 93.1135 439.734 93.3377L376.929 110.086C371.412 111.557 366 107.399 366 101.69C366 96.8904 369.89 93 374.69 93H388.71C394.233 93 398.71 88.5228 398.71 83V59C398.71 53.4772 403.187 49 408.71 49H504C509.523 49 514 53.4772 514 59Z" fill="#74CB48"/>
+</g>
+<g id="Vector 2" filter="url(#filter1_i_841_40)">
+<path d="M287.458 761C298.996 739.152 256.306 742.601 224 748.351C313.996 710.404 375.146 735.702 287.458 761Z" fill="#20D027" fill-opacity="0.1"/>
+</g>
+<g id="Vector 3" filter="url(#filter2_i_841_40)">
+<path d="M118.739 729C107.419 750.848 149.303 747.399 181 741.649C92.7024 779.596 32.7054 754.298 118.739 729Z" fill="#20D027" fill-opacity="0.1"/>
+</g>
+<g id="header">
+<g id="name">
+<text id="value_name" fill="black" stroke="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="28" font-weight="bold" letter-spacing="0em"><tspan x="60" y="77.1818">{title}</tspan></text>
+</g>
+<g id="hp">
+<text id="value_hp" fill="black" stroke="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="24" font-weight="800" letter-spacing="0em"><tspan x="409" y="75.7273">{hp} HP</tspan></text>
+</g>
+</g>
+<g id="image" filter="url(#filter3_d_841_40)">
+<rect x="70" y="104" width="433" height="349" stroke="url(#paint0_linear_841_40)" stroke-width="22" shape-rendering="crispEdges"/>
+<rect id="value_image" x="70" y="104" width="433" height="349" rx="2" fill="url(#pattern0_841_40)"/>
+</g>
+<g id="caption">
+<path d="M50 493C50 481.954 58.9543 473 70 473H518C520.761 473 523 475.239 523 478V482C523 493.046 514.046 502 503 502H55C52.2386 502 50 499.761 50 497V493Z" fill="url(#paint1_linear_841_40)"/>
+<text id="value_type" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="17" font-weight="bold" letter-spacing="0em"><tspan x="84.5254" y="493.682">{type} Manny. Height: {height}, Weight: {weight}.</tspan></text>
+</g>
+<g id="moves">
+<g id="move1" clip-path="url(#clip0_841_40)">
+<g id="value_move1_info">
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="281.314" y="546.955">{move1_info}</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="277.611" y="546.955"> </tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="26" font-weight="bold" letter-spacing="0em"><tspan x="90" y="546.955">{move1_name}</tspan></text>
+</g>
+</g>
+<g id="move2" clip-path="url(#clip1_841_40)">
+<g id="value_move2_info">
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="284.971" y="597.955">{move1_info}</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="281.268" y="597.955"> </tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="26" font-weight="bold" letter-spacing="0em"><tspan x="90" y="597.955">{move2_name}</tspan></text>
+</g>
+</g>
+</g>
+<g id="stats" clip-path="url(#clip2_841_40)">
+<g id="weakness" clip-path="url(#clip3_841_40)">
+<text id="label_weakness" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="87.8333" y="720.318">Weakness</tspan></text>
+<text id="value_weakness" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="90.8939" y="747.591">{weakness}</tspan></text>
+</g>
+<g id="resistance" clip-path="url(#clip4_841_40)">
+<text id="label_resistance" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="243" y="720.318">Resistance</tspan></text>
+<text id="value_resistance" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="247.323" y="747.591">{resistance}</tspan></text>
+</g>
+<g id="retreat cost" clip-path="url(#clip5_841_40)">
+<text id="label_retreat" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="396.167" y="720.318">Retreat cost</tspan></text>
+<text id="value_retreat" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="399.487" y="747.591">{retreat_cost}</tspan></text>
+</g>
+</g>
+<g id="footer">
+<rect x="50.5" y="771.5" width="472" height="28" stroke="url(#paint2_linear_841_40)"/>
+<text id="value_footer" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="55" y="791.318">{footer}</tspan></text>
+</g>
+<g id="license" clip-path="url(#clip6_841_40)">
+<text id="label_license" fill="black" fill-opacity="0.5" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="64.4766" y="831.864">mannygen - MANNYS.GAME - 2024 - powered by Glif.app - no rights reserved</tspan></text>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_841_40" x="358" y="41" width="180" height="93.3839" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="8" dy="8"/>
+<feGaussianBlur stdDeviation="8"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_841_40"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_841_40" result="shape"/>
+</filter>
+<filter id="filter1_i_841_40" x="220" y="727" width="110" height="34" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-5" dy="-2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.167839 0 0 0 0 0.136945 0 0 0 0 0.136945 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_841_40"/>
+</filter>
+<filter id="filter2_i_841_40" x="73" y="727" width="108" height="34" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-5" dy="-2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.167839 0 0 0 0 0.136945 0 0 0 0 0.136945 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_841_40"/>
+</filter>
+<filter id="filter3_d_841_40" x="51" y="85" width="487" height="403" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="8" dy="8"/>
+<feGaussianBlur stdDeviation="8"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_841_40"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_841_40" result="shape"/>
+</filter>
+<pattern id="pattern0_841_40" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_841_40" transform="matrix(0.000976562 0 0 0.00121161 0 -0.120344)"/>
+</pattern>
+<linearGradient id="paint0_linear_841_40" x1="503" y1="114.657" x2="58.8594" y2="399.691" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B18A42"/>
+<stop offset="0.239177" stop-color="#DFCB2A"/>
+<stop offset="0.483534" stop-color="#DFCE3D"/>
+<stop offset="0.670472" stop-color="#EEE54E"/>
+<stop offset="0.833333" stop-color="#DECD9D"/>
+<stop offset="1" stop-color="#A68812"/>
+</linearGradient>
+<linearGradient id="paint1_linear_841_40" x1="50" y1="487.5" x2="523" y2="487.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CDB5B5"/>
+<stop offset="0.71" stop-color="#EEE628"/>
+<stop offset="1" stop-color="#675B5B"/>
+</linearGradient>
+<linearGradient id="paint2_linear_841_40" x1="523" y1="771.885" x2="513.51" y2="851.952" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B18A42"/>
+<stop offset="0.239177" stop-color="#DFCB2A"/>
+<stop offset="0.483534" stop-color="#DFCE3D"/>
+<stop offset="0.670472" stop-color="#EEE54E"/>
+<stop offset="0.833333" stop-color="#DECD9D"/>
+<stop offset="1" stop-color="#A68812"/>
+</linearGradient>
+<clipPath id="clip0_841_40">
+<rect width="393" height="31" fill="white" transform="translate(90 522)"/>
+</clipPath>
+<clipPath id="clip1_841_40">
+<rect width="393" height="31" fill="white" transform="translate(90 573)"/>
+</clipPath>
+<clipPath id="clip2_841_40">
+<rect width="473" height="46" fill="white" transform="translate(50 705)"/>
+</clipPath>
+<clipPath id="clip3_841_40">
+<rect width="157.667" height="46" fill="white" transform="translate(50 705)"/>
+</clipPath>
+<clipPath id="clip4_841_40">
+<rect width="157.667" height="46" fill="white" transform="translate(207.667 705)"/>
+</clipPath>
+<clipPath id="clip5_841_40">
+<rect width="157.667" height="46" fill="white" transform="translate(365.333 705)"/>
+</clipPath>
+<clipPath id="clip6_841_40">
+<rect width="473" height="15" fill="white" transform="translate(50 820)"/>
+</clipPath>
+<image id="image0_841_40" data-name="835a28f3-9e2e-4239-bdba-8a8e6a896324.png" width="1024" height="1024" xlink:href="{image_url}"/>
+</defs>
+</svg>
