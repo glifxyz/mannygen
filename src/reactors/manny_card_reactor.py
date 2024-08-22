@@ -9,6 +9,7 @@ from src.utils import extract_url
 
 class MannyCardReactor(Reactor):
     """This class has a db integration. See src/database.py"""
+
     emoji = "🃏"
     glif_id_data = "clumo1gze000ak7eymnp9z07j"
     glif_id_card = "clumtpbkq000011v8yedrk2en"

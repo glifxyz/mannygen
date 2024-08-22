@@ -6,7 +6,7 @@ from typing import Optional
 import discord
 from discord import Message
 from glif_client import GlifClient
-from reactors.avatar_remix_reactor import AvatarRemixReactor
+# from reactors.avatar_remix_reactor import AvatarRemixReactor
 from reactors.background_remover_reactor import BackgroundRemoverReactor
 from reactors.base import ReactorContext, WatchlistTuple
 from reactors.manny_card_reactor import MannyCardReactor
@@ -21,7 +21,7 @@ from rich import print
 from src.config import Config
 from src.database import get_len
 from src.filters import check_manny_command, check_promptexplorer_command
-from src.utils import NSFWError, prep_manny_prompt
+from src.utils import NSFWError
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -35,10 +35,23 @@ glif_client = GlifClient()
 
 
 async def generate_manny_image(prompt: str) -> str:
-    prepped_prompt = prep_manny_prompt(prompt)
+    parsed = prompt.lower()
+    parsed = parsed.replace("!mannygen ", "").replace("!mg ", "")
+    parsed = parsed.replace("mannies", "manny persons")
+
+    augmented_prompt = await glif_client.arun_simple(
+        "cm050vqbs0001p8uzgj4me810",
+        {
+            "prompt": parsed,
+        }
+    )
+
+    print(f"{augmented_prompt=}")
+    prepped_prompt = augmented_prompt.replace("manny", "m4nny404")
+    print(f"{prepped_prompt=}")
 
     image_url = await glif_client.arun_simple(
-        "clus5l9sp0000b22hzpkz5rwj",
+        "cm05sikil00038tzsfez8kddq",
         {
             "prompt": prepped_prompt,
         },
@@ -60,7 +73,7 @@ async def generate_manny_image(prompt: str) -> str:
 global_reaction_watchlist = deque(maxlen=1000)
 reactors = [
     BackgroundRemoverReactor(),
-    AvatarRemixReactor(),
+    # AvatarRemixReactor(),
     MannyCardReactor(),
     PromptExplorerUpReactor(),
     PromptExplorerDownReactor(),

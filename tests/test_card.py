@@ -1,8 +1,9 @@
-from glif_client import GlifClient
-import pytest
 import json
-from rich import print
 import textwrap
+
+import pytest
+from glif_client import GlifClient
+from rich import print
 
 glif_client = GlifClient()
 

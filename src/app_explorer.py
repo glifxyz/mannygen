@@ -2,7 +2,6 @@
 This is a fastAPI app you can run with uvicorn src.app_explorer:app
 """
 
-
 import textwrap
 
 from fastapi import FastAPI
