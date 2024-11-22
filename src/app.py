@@ -6,6 +6,7 @@ from typing import Optional
 import discord
 from discord import Message
 from glif_client import GlifClient
+
 # from reactors.avatar_remix_reactor import AvatarRemixReactor
 from reactors.background_remover_reactor import BackgroundRemoverReactor
 from reactors.base import ReactorContext, WatchlistTuple
@@ -20,7 +21,11 @@ from rich import print
 
 from src.config import Config
 from src.database import get_len
-from src.filters import check_manny_command, check_promptexplorer_command
+from src.filters import (
+    check_manny_command,
+    check_manny_remix_command,
+    check_promptexplorer_command,
+)
 from src.utils import NSFWError
 
 intents = discord.Intents.default()
@@ -43,7 +48,7 @@ async def generate_manny_image(prompt: str) -> str:
         "cm050vqbs0001p8uzgj4me810",
         {
             "prompt": parsed,
-        }
+        },
     )
 
     print(f"{augmented_prompt=}")
@@ -64,6 +69,29 @@ async def generate_manny_image(prompt: str) -> str:
         raise NSFWError
 
     return image_url
+
+
+async def remix_manny_image(prompt: str) -> str:
+    parsed = prompt.lower()
+    img_url = parsed.split("--img")[1].split()[0].strip()
+
+    if not img_url.startswith("https://"):
+        raise ValueError(f"img_url: {img_url} is not a valid url")
+
+    output_image_url = await glif_client.arun_simple(
+        "cm3seqsei003484tx6l3sg5l6",
+        {
+            "input_image": img_url,
+        },
+    )
+
+    if output_image_url in [
+        "https://res.cloudinary.com/dzkwltgyd/image/upload/v1690807779/nsfw_placeholders/cartoon_of_shocked_hamster_shocked_facial_expression_whimsical_cartoon__tyyjgi.jpg",
+        "https://res.cloudinary.com/dzkwltgyd/image/upload/v1690807782/nsfw_placeholders/cartoon_of_a_hamster_with_hands_in_face_in_shame_cute_whimsical_1970s_cartoon_iapc3o.jpg",
+    ]:
+        raise NSFWError
+
+    return output_image_url
 
 
 #
@@ -144,6 +172,37 @@ async def on_message(message: Message):
                 content="<:mannydead:965319045559754772>"
             )
 
+    if check_manny_remix_command(message):
+        try:
+            placeholder_message = await message.channel.send(
+                content="https://media1.tenor.com/images/7cc288921752b1a3dd2383d4c90bda0b/tenor.gif?itemid=27328551",
+                reference=message,
+            )
+            image_url = await remix_manny_image(message.content)
+            await placeholder_message.delete()
+            new_message = await message.channel.send(
+                content=image_url,
+                reference=message,
+            )
+
+            await add_reactions(new_message, reactors, collection="mannygen")
+            # add to reaction_watchlist
+            global_reaction_watchlist.append(
+                WatchlistTuple(
+                    id=new_message.id, prompt=message.content, collection="mannygen"
+                )
+            )
+        except NSFWError:
+            print("[red] nsfw error")
+            await placeholder_message.edit(
+                content="<:mannydead:965319045559754772> (nsfw triggered)"
+            )
+        except Exception as e:
+            print(f"[red] {e}")
+            message = await placeholder_message.edit(
+                content="<:mannydead:965319045559754772>"
+            )
+
     if check_promptexplorer_command(message):
         placeholder_message = await message.channel.send(
             content="https://media1.tenor.com/images/7cc288921752b1a3dd2383d4c90bda0b/tenor.gif?itemid=27328551",
@@ -183,7 +242,7 @@ async def on_reaction_add(reaction, user):
             watchlist_tuple = wt
             break
     if watchlist_tuple is None:
-        print("watchlist_tuple is None, returning")
+        print("could not find message.id in watchlist, returning")
         return
 
     context = ReactorContext(
