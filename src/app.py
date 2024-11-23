@@ -148,6 +148,8 @@ async def on_message(message: Message):
                 reference=message,
             )
             image_url = await generate_manny_image(message.content)
+            if image_url is None or image_url == "":
+                raise ValueError("image_url is None or empty")
             await placeholder_message.delete()
             new_message = await message.channel.send(
                 content=image_url,
@@ -179,6 +181,8 @@ async def on_message(message: Message):
                 reference=message,
             )
             image_url = await remix_manny_image(message.content)
+            if image_url is None or image_url == "":
+                raise ValueError("image_url is None or empty")
             await placeholder_message.delete()
             new_message = await message.channel.send(
                 content=image_url,
