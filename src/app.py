@@ -2,6 +2,7 @@
 import json
 from collections import deque
 from typing import Optional
+import logging
 
 import discord
 from discord import Message
@@ -32,6 +33,8 @@ intents = discord.Intents.default()
 intents.message_content = True
 client = discord.Client(intents=intents)
 glif_client = GlifClient()
+
+logging.basicConfig(level=logging.DEBUG)
 
 
 #
