@@ -78,8 +78,8 @@ async def remix_manny_image(prompt: str) -> str:
     parsed = prompt.lower()
     img_url = parsed.split("--img")[1].split()[0].strip()
 
-    if not img_url.startswith("https://"):
-        raise ValueError(f"img_url: {img_url} is not a valid url")
+    if not (img_url.startswith("https://") or img_url.startswith("data:image/")):
+        raise ValueError(f"img_url: {img_url} is not a valid url or base64 image")
 
     output_image_url = await glif_client.arun_simple(
         "cm3seqsei003484tx6l3sg5l6",
@@ -183,6 +183,12 @@ async def on_message(message: Message):
                 content="https://media1.tenor.com/images/7cc288921752b1a3dd2383d4c90bda0b/tenor.gif?itemid=27328551",
                 reference=message,
             )
+
+            if message.attachments:
+                attachment = message.attachments[0]
+                if attachment.content_type.startswith("image/"):
+                    print("found image attached")
+
             image_url = await remix_manny_image(message.content)
             if image_url is None or image_url == "":
                 raise ValueError("image_url is None or empty")

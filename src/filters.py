@@ -39,7 +39,7 @@ def check_manny_remix_command(message: Message) -> bool:
         return False
 
     # check if manny is in the sanitized content
-    if " --img " not in content:
+    if " --img" not in content:
         return False
 
     print("found manny remix command")
