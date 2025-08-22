@@ -12,6 +12,7 @@ class MannyGunReactor(Reactor):
 
     emoji = "🔫"
     glif_id = "cmemgni6j0000js04tgky4qcb"
+    collection = "mannygen"
 
     def __init__(self):
         super().__init__()

@@ -149,7 +149,7 @@ async def on_message(message: Message):
     if check_manny_command(message):
         try:
             placeholder_message = await message.channel.send(
-                content="https://media1.tenor.com/images/7cc288921752b1a3dd2383d4c90bda0b/tenor.gif?itemid=27328551",
+                content="⏳",
                 reference=message,
             )
             image_url = await generate_manny_image(message.content)
