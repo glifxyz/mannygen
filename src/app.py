@@ -12,6 +12,7 @@ from glif_client import GlifClient
 from reactors.background_remover_reactor import BackgroundRemoverReactor
 from reactors.base import ReactorContext, WatchlistTuple
 from reactors.manny_card_reactor import MannyCardReactor
+from reactors.mannygun import MannyGunReactor
 from reactors.prompt_explorer_reactor import (
     PromptExplorerDownReactor,
     PromptExplorerLeftReactor,
@@ -110,6 +111,7 @@ reactors = [
     PromptExplorerDownReactor(),
     PromptExplorerLeftReactor(),
     PromptExplorerRightReactor(),
+    MannyGunReactor(),
 ]
 for reactor in reactors:
     reactor.set_glif_client(glif_client)
